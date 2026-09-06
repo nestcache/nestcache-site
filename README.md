@@ -24,7 +24,7 @@ NestCache is designed primarily as a local application. Inventory, shopping, rec
 
 NestCache does not currently require an account or sign-in to use the app. Some optional product and price lookup features may send a barcode, product name, or search term to third-party product-information services when you choose to use those features.
 
-For full details, see the [NestCache Privacy Policy](privacy.html).
+For full details, see the [NestCache Privacy Policy](https://nestcache.github.io/nestcache-site/privacy.html).
 
 ## Feedback & Support
 
