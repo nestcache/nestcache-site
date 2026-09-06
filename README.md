@@ -44,4 +44,4 @@ This public repository is used for NestCache website and public-facing informati
 
 ---
 
-**NestCache** — Know what you have. Find what you need.
+**NestCache** — Organize. Track. Simplify.
