@@ -15,8 +15,10 @@
       --text: #1f2937;
       --muted: #6b7280;
       --border: #e5e7eb;
-      --accent: #2563eb;
-      --accent-hover: #1d4ed8;
+      --brand-green: #04482e;
+      --brand-lime: #b6e82b;
+      --accent: #04482e;
+      --accent-hover: #033923;
       --accent-text: #ffffff;
     }
     @media (prefers-color-scheme: dark) {
@@ -27,9 +29,11 @@
         --text: #f3f4f6;
         --muted: #9ca3af;
         --border: #374151;
-        --accent: #60a5fa;
-        --accent-hover: #93c5fd;
-        --accent-text: #111827;
+        --brand-green: #04482e;
+        --brand-lime: #b6e82b;
+        --accent: #b6e82b;
+        --accent-hover: #c5f34d;
+        --accent-text: #082d1e;
       }
     }
     * { box-sizing: border-box; }
@@ -58,7 +62,10 @@
       justify-content: space-between;
       gap: 20px;
     }
-    .brand { font-size: 1.15rem; font-weight: 800; color: var(--text); text-decoration: none; }
+    .brand { display:flex; align-items:center; gap:10px; font-size:1.15rem; font-weight:800; color:var(--text); text-decoration:none; }
+    .brand-logo { width:38px; height:38px; display:block; }
+    .brand-name .cache { color:var(--brand-lime); }
+    .hero-logo { width:clamp(120px,18vw,180px); height:auto; margin:0 auto 20px; display:block; }
     .navlinks { display: flex; gap: 20px; align-items: center; }
     .navlinks a { color: var(--muted); text-decoration: none; font-weight: 600; font-size: .95rem; }
     .navlinks a:hover { color: var(--text); }
@@ -102,7 +109,10 @@
   <header>
     <div class="wrap">
       <nav aria-label="Main navigation">
-        <a class="brand" href="#top">NestCache</a>
+        <a class="brand" href="#top" aria-label="NestCache home">
+          <picture><source srcset="assets/nestcache-logo-dark.svg" media="(prefers-color-scheme: dark)"><img class="brand-logo" src="assets/nestcache-logo-light.svg" alt="" /></picture>
+          <span class="brand-name">Nest<span class="cache">Cache</span></span>
+        </a>
         <div class="navlinks">
           <a href="#features">Features</a>
           <a href="#privacy">Privacy</a>
@@ -115,6 +125,7 @@
   <main id="top">
     <div class="wrap">
       <section class="hero">
+        <picture><source srcset="assets/nestcache-logo-dark.svg" media="(prefers-color-scheme: dark)"><img class="hero-logo" src="assets/nestcache-logo-light.svg" alt="NestCache logo" /></picture>
         <div class="eyebrow">Household inventory & organization</div>
         <h1>Organize. Track. Simplify.</h1>
         <p>Know what you have, find it fast, and keep shopping organized with practical tools for everyday household inventory.</p>
