@@ -14,13 +14,14 @@ NestCache brings household inventory and shopping tools together in one place. C
 - Shopping lists with quantities, stores, categories, estimated totals, and sales tax estimates
 - Receipt capture and on-device receipt text recognition
 - Repurchase suggestions based on local purchase history
+- Recipes with ingredient links to My Items, missing-ingredient Shopping workflows, and reviewed Cooked This inventory deductions
 - Product and price lookup tools
 - Import and export for backup and transfer
 - Light, dark, and automatic appearance modes
 
 ## Privacy First
 
-NestCache is designed primarily as a local application. Inventory, shopping, receipt, and related household information is generally stored on your device.
+NestCache is designed primarily as a local application. Inventory, shopping, recipe, receipt, and related household information is generally stored on your device.
 
 NestCache does not currently require an account or sign-in to use the app. Some optional product and price lookup features may send a barcode, product name, or search term to third-party product-information services when you choose to use those features.
 
